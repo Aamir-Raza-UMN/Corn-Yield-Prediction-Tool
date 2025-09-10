@@ -130,7 +130,7 @@ These files are then used as inputs for the Corn-Yield-Prediction-Tool.
 <p>To run the model, download the base files from the following link:</p>
 <p><a href="https://drive.google.com/drive/folders/1o-nj30ePG_8DWgCBAw8yOjwm_CjHq0Mb?usp=drive_link" target="_blank">📂 Google Drive – Model Base Files</a></p>
 
-<p>Additionally, download the <code>Tool.py</code> file and place it in the same folder as the base files.</p>
+<p>Additionally, download the [Tool.py](Tool.py)  file and place it in the same folder as the base files.</p>
 
 <h3>🔧 File Path Configuration</h3>
 <p>Right-click on <code>imputer.pkl</code>, copy its path, and update it in the code lines for all logos and model base files inside <code>Tool.py</code>. Save the file after editing.  
