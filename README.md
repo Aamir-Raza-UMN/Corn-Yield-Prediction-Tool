@@ -128,7 +128,7 @@ These files are then used as inputs for the Corn-Yield-Prediction-Tool.
 <h2>⚙️ Model Setup and Execution</h2>
 
 <p>To run the model, download the base files from the following link:</p>
-<p><a href="https://drive.google.com/drive/folders/1o-nj30ePG_8DWgCBAw8yOjwm_CjHq0Mb?usp=drive_link" target="_blank">📂 Google Drive – Model Base Files</a></p>
+<p><a href="https://drive.google.com/drive/folders/1o-nj30ePG_8DWgCBAw8yOjwm_CjHq0Mb?usp=drive_link" target="_blank">📂 Model Base Files</a></p>
 
 <p>
   Additionally, download the <a href="Tool.py">Tool.py</a> file and place it in the same folder as the base files.
