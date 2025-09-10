@@ -216,4 +216,56 @@ imputer = joblib.load("C:/Users/araza/Desktop/Model_base_files/imputer.pkl")
 
 <hr>
 
+<hr>
 
+<hr>
+
+<h2>✍️ Authors</h2>
+
+<div style="margin-bottom:20px;">
+  <h3>Aamir Raza</h3>
+  <p>PhD Student | Graduate Research Assistant<br>
+  🌱 Precision Agriculture Center<br>
+  📍 Department of Soil, Water, and Climate<br>
+  University of Minnesota | St. Paul, MN 55108, USA</p>
+</div>
+
+<div style="margin-bottom:20px;">
+  <h3>Yuxin Miao, Ph.D.</h3>
+  <p> Professor of Precision Agriculture <br>
+  🌱 Precision Agriculture Center<br>
+  📍 Department of Soil, Water and Climate<br>
+  University of Minnesota | St. Paul, MN 55108, USA</p>
+</div>
+
+<div style="margin-bottom:20px;">
+  <h3>Dr. Yanbo Huang</h3>
+  <p>Research Agricultural Engineer<br>
+  📍 USDA-ARS Genetics and Sustainable Agriculture Research Unit<br>
+  Mississippi State, MS 39762, USA</p>
+</div>
+
+<div style="margin-bottom:20px;">
+  <h3>Junjun Lu</h3>
+  <p>🌱 Precision Agriculture Center<br>
+  📍 Department of Soil, Water and Climate<br>
+  University of Minnesota | St. Paul, MN 55108, USA</p>
+</div>
+
+<div style="margin-bottom:20px;">
+  <h3>Zhengwei Yang</h3>
+  <p>📍 USDA-NASS Research and Development Division<br>
+  Washington, D.C. 20250, USA</p>
+</div>
+
+<div style="margin-bottom:20px;">
+  <h3>Rajat Bindlish</h3>
+  <p>📍 NASA Goddard Space Flight Center<br>
+  Greenbelt, MD 20771, USA</p>
+</div>
+
+<p><strong>📌 Correspondence:</strong><br>
+<a href="mailto:ymiao@umn.edu">ymiao@umn.edu</a> ; 
+<a href="mailto:yanbo.huang@usda.gov">yanbo.huang@usda.gov</a></p>
+
+<hr>
