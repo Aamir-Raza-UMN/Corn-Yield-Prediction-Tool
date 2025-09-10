@@ -1,1 +1,1 @@
-# Corn-Yield-Prediction-Model
+# Procedure to use the Corn-Yield-Prediction-tool
