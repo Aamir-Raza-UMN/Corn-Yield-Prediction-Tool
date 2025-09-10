@@ -159,7 +159,7 @@ imputer = joblib.load("C:/Users/araza/Desktop/Model_base_files/imputer.pkl")
 <p>The application will launch (see figure below). Keep the command prompt open while using the tool.</p>
 
 <hr>
-
+Tool_UI.png
 <h2>🖥️ Prototype Tool Implementation</h2>
 
 <p>The prototype User Interface (UI) was designed to simplify the use of the corn yield prediction framework. The workflow involves the following steps:</p>
