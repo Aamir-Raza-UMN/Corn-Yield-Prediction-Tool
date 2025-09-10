@@ -122,3 +122,85 @@ Daily CHU = average of adjusted min and max heat contributions.
 - Dynamic variables → Climate features (CHU, GDD, AWDR, SPI, etc.)
 
 These files are then used as inputs for the Corn-Yield-Prediction-Tool.
+
+<hr>
+
+<h2>⚙️ Model Setup and Execution</h2>
+
+<p>To run the model, download the base files from the following link:</p>
+<p><a href="https://drive.google.com/drive/folders/1o-nj30ePG_8DWgCBAw8yOjwm_CjHq0Mb?usp=drive_link" target="_blank">📂 Google Drive – Model Base Files</a></p>
+
+<p>Additionally, download the <code>Tool.py</code> file and place it in the same folder as the base files.</p>
+
+<h3>🔧 File Path Configuration</h3>
+<p>Right-click on <code>imputer.pkl</code>, copy its path, and update it in the code lines for all logos and model base files inside <code>Tool.py</code>. Save the file after editing.  
+This can be done in Notepad or any Python-supported editor.</p>
+
+<pre><code class="language-python">
+logo1 = Image.open("C:/Users/araza/Desktop/Model_base_files/PAC.png").resize((150, 100))
+logo2 = Image.open("C:/Users/araza/Desktop/Model_base_files/USDA.png").resize((120, 100))
+logo3 = Image.open("C:/Users/araza/Desktop/Model_base_files/NASA.png").resize((120, 100))
+
+model   = joblib.load("C:/Users/araza/Desktop/Model_base_files/stacking_model.pkl")
+scaler  = joblib.load("C:/Users/araza/Desktop/Model_base_files/scaler.pkl")
+imputer = joblib.load("C:/Users/araza/Desktop/Model_base_files/imputer.pkl")
+</code></pre>
+
+<h3>▶️ Running the Tool</h3>
+<ol>
+  <li>Open <strong>Command Prompt</strong>.</li>
+  <li>Navigate to the folder containing the base files:
+    <pre><code>cd C:\Users\araza\Desktop\Model_base_files</code></pre>
+  </li>
+  <li>Run the tool:
+    <pre><code>python Tool.py</code></pre>
+  </li>
+</ol>
+<p>The application will launch (see figure below). Keep the command prompt open while using the tool.</p>
+
+<hr>
+
+<h2>🖥️ Prototype Tool Implementation</h2>
+
+<p>The prototype User Interface (UI) was designed to simplify the use of the corn yield prediction framework. The workflow involves the following steps:</p>
+
+<ul>
+  <li><strong>Upload Input Files</strong>:
+    <ul>
+      <li>CSV file with predictor (independent) variables (vegetation indices, lat/lon coordinates, soil, and topography).</li>
+      <li>CSV file with daily weather parameters (precipitation, temperature, radiation, etc.).</li>
+    </ul>
+  </li>
+  <li><strong>Data Cleaning</strong>:  
+  The <em>Clean IVs</em> function automatically detects and handles missing or <code>NaN</code> values, ensuring consistency and reliability before modeling.</li>
+  <li><strong>Select Prediction Year</strong>:  
+  Users can choose the target year via a drop-down menu.</li>
+  <li><strong>Predict Yield</strong>:  
+  Clicking the <em>Predict Yield</em> button runs the model on the uploaded datasets and generates predictions.</li>
+  <li><strong>Show Summary</strong>:  
+  Displays descriptive statistics (mean, standard deviation, range) of the predicted yields.</li>
+  <li><strong>Export Results</strong>:  
+  Users can export predictions (Latitude, Longitude, Yield) as a CSV file, which can be mapped for spatial yield distribution analysis.</li>
+</ul>
+
+<hr>
+
+<h2>🔬 Prototype Demonstration</h2>
+
+<p>To operationalize the spatial regression (SR) framework, the <strong>Corn Yield Prediction Tool</strong> was developed with a graphical user interface (GUI). This makes the tool accessible to researchers, agronomists, and stakeholders without requiring programming expertise.</p>
+
+<p>The GUI provides a step-by-step workflow:</p>
+<ol>
+  <li>Upload CSV files with vegetation indices, coordinates, soil/topographic variables, and daily weather data.</li>
+  <li>The <em>Clean IVs</em> function ensures input integrity by handling missing values.</li>
+  <li>Select the prediction year.</li>
+  <li>Run predictions using the stacking regression model, which integrates environmental, soil, and vegetation predictors.</li>
+  <li>Review descriptive statistics of predicted yields.</li>
+  <li>Export results as CSV for mapping and spatial analysis of yield distributions.</li>
+</ol>
+
+<p>This prototype serves as a bridge between advanced machine learning models and practical agricultural applications. By unifying environmental, soil, and weather data into an intuitive workflow, it empowers stakeholders to query, analyze, and visualize regional yield forecasts effectively.</p>
+
+<hr>
+
+
