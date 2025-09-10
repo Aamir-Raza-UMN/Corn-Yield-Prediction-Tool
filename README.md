@@ -20,7 +20,7 @@ pip install pandas==2.2.3 joblib==1.4.2 numpy==1.26.4 pillow==11.1.0 scipy==1.15
 ## 📊 Data Preparation Workflow
 **1. Vegetation Indices (VIs)**
 
-- Use Vegetation_Indices_L8.js in Google Earth Engine (GEE) to calculate vegetation indices for your region of interest.
+- Use [Vegetation_Indices_L8.js](Vegetation_Indices_L8.js) in Google Earth Engine (GEE) to calculate vegetation indices for your region of interest.
 
 - Provide area boundary input and select imagery from a consistent growth stage (e.g., 15–31 August for Minnesota).
 
@@ -33,7 +33,7 @@ pip install pandas==2.2.3 joblib==1.4.2 numpy==1.26.4 pillow==11.1.0 scipy==1.15
 
 **2. Soil Data**
 
-- Use download_polaris_soil_rasters.R to download POLARIS soil data for your region.
+- Use [download_polaris_soil_rasters.R](download_polaris_soil_rasters.R) to download POLARIS soil data for your region.
 
 - Extract three soil depths: 0–5 cm, 5–15 cm, 15–30 cm.
 
@@ -60,7 +60,7 @@ Formula for TWI:
 
 **4. Data Integration**
 
-- Use raster_point_extraction_and_data_merge.py to extract numeric data from VIs, soil, and topography rasters.
+- Use [raster_point_extraction_and_data_merge.py](raster_point_extraction_and_data_merge.py) to extract numeric data from VIs, soil, and topography rasters.
 
 - Match datasets by VI pixel coordinates (Lat, Lon).
 
