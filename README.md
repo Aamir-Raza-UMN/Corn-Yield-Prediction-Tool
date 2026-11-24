@@ -2,7 +2,7 @@
 <img src="PAC.png" alt="PAC Logo" width="240" height="240" style="display: inline-block; margin: 10px;">   <img src="USDA.png" alt="USDA Logo" width="240" height="240" style="display: inline-block; margin: 10px;">   <img src="NASA.png" alt="NASA Logo" width="240" height="240" style="display: inline-block; margin: 10px;">
 
 
-This repository provides a complete workflow for predicting corn yield using vegetation indices, soil data, topography, and climate variables.  
+This repository provides a complete workflow for predicting corn yield using satellite-derived vegetation indices, soil properties, topographic attributes, and weather variables. It includes step-by-step instructions, data-preparation scripts, and two sample field datasets (*Sample Data 1* and *Sample Data 2*) in CSV format. Users can use these sample datasets to test the tool and verify its functionality on their local systems before applying it to their own datasets.
 
 ---
 
