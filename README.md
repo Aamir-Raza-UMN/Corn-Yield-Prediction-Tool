@@ -14,7 +14,7 @@ Ensure you are using **Python 3.11.9** and have the following libraries installe
 python --version
 # Python 3.11.9
 
-pip install pandas==2.2.3 joblib==1.4.2 numpy==1.26.4 pillow==11.1.0 scipy==1.15.1 xgboost==3.0.2
+pip install pandas==2.2.3 joblib==1.4.2 numpy==1.26.4 pillow==11.1.0 scipy==1.15.1 xgboost==3.0.2 scikit-learn version= 1.8.0
 
 ```
 ## 📊 Data Preparation Workflow
